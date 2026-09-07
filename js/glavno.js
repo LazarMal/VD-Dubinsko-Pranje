@@ -3,6 +3,15 @@
 const KLJUC_TEMA = "dubinskiSjajTema";
 const KLJUC_FONT = "dubinskiSjajFont";
 
+function ucitajKorekcijeTamneTeme() {
+  if (document.querySelector("link[href='css/tamna-tema.css']")) return;
+
+  const stilTamneTeme = document.createElement("link");
+  stilTamneTeme.rel = "stylesheet";
+  stilTamneTeme.href = "css/tamna-tema.css";
+  document.head.appendChild(stilTamneTeme);
+}
+
 function postaviTemu(tema) {
   const tamnaTema = tema === "tamna";
   document.body.classList.toggle("tema-tamna", tamnaTema);
@@ -104,6 +113,7 @@ function ucitajPodesavanja() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  ucitajKorekcijeTamneTeme();
   ucitajPodesavanja();
   pripremiCenovnikUMeniju();
   pripremiNavigaciju();
