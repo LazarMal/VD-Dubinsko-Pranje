@@ -22,7 +22,7 @@ function pokreniSlajder() {
 
   function restartujTajmer() {
     clearInterval(tajmer);
-    tajmer = setInterval(() => prikaziSlajd(indeks + 1), 5000);
+    tajmer = setInterval(() => prikaziSlajd(indeks + 1), 2000);
   }
 
   prethodni?.addEventListener("click", () => {
