@@ -41,7 +41,7 @@ jobs:
               rgb.save(
                   putanja,
                   format='JPEG',
-                  quality=90,
+                  quality=82,
                   optimize=True,
                   progressive=True
               )
@@ -60,5 +60,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add slike/pranje-automobila.jpg slike/pranje-namestaja.jpg slike/iznajmljivanje-masine.jpg
-          git commit -m "Optimizovane tri velike slike bez vidljive promene kvaliteta"
+          git commit -m "Kompresovane tri velike slike uz ocuvan vizuelni kvalitet"
           git push
