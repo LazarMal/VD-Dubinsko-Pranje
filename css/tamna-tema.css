@@ -1,0 +1,52 @@
+/* Korekcije kontrasta za tamnu temu na glavnim stranicama. */
+
+body.tema-tamna .kartica-usluge {
+  background: var(--boja-povrsine);
+  color: var(--boja-teksta);
+}
+
+body.tema-tamna .kartica-usluge p {
+  color: var(--boja-prigusena);
+}
+
+body.tema-tamna .card {
+  background-color: var(--boja-povrsine) !important;
+  color: var(--boja-teksta) !important;
+}
+
+body.tema-tamna .card h2,
+body.tema-tamna .card p,
+body.tema-tamna .card strong,
+body.tema-tamna .form-label,
+body.tema-tamna .form-check-label {
+  color: var(--boja-teksta) !important;
+}
+
+body.tema-tamna .form-control,
+body.tema-tamna .form-select {
+  background-color: #ffffff;
+  color: #1b2023;
+  border-color: #aeb5ba;
+}
+
+body.tema-tamna .form-control:focus,
+body.tema-tamna .form-select:focus {
+  background-color: #ffffff;
+  color: #1b2023;
+  border-color: var(--boja-akcenta);
+  box-shadow: 0 0 0 0.2rem rgba(197, 164, 106, 0.22);
+}
+
+body.tema-tamna .form-check-input {
+  background-color: #ffffff;
+  border-color: #9aa1a6;
+}
+
+body.tema-tamna .form-check-input:checked {
+  background-color: var(--boja-akcenta);
+  border-color: var(--boja-akcenta);
+}
+
+body.tema-tamna .invalid-feedback {
+  color: #ff9b9b;
+}
