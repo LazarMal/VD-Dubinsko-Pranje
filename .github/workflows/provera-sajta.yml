@@ -7,6 +7,9 @@ on:
       - '.github/workflows/provera-sajta.yml'
       - 'css/pristupacnost.css'
       - 'js/glavno.js'
+      - 'slike/pranje-automobila.jpg'
+      - 'slike/pranje-namestaja.jpg'
+      - 'slike/iznajmljivanje-masine.jpg'
 
 jobs:
   lighthouse-provera:
