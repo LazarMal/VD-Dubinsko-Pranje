@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - '.github/workflows/provera-sajta.yml'
+      - 'css/pristupacnost.css'
+      - 'js/glavno.js'
 
 jobs:
   lighthouse-provera:
@@ -13,6 +15,9 @@ jobs:
     steps:
       - name: Preuzimanje projekta
         uses: actions/checkout@v4
+
+      - name: Sacekaj GitHub Pages objavu
+        run: sleep 45
 
       - name: Provera dostupnosti hostovanog sajta
         run: |
