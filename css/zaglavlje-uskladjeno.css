@@ -1,9 +1,0 @@
-/* Usklađuje zaglavlje klasičnih stranica sa Bootstrap zaglavljem na Kontakt strani. */
-.zaglavlje {
-  background: #000;
-  font-size: 16px;
-}
-
-body.font-veliki {
-  --osnovni-font: 20px;
-}
