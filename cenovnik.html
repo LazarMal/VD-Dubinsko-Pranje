@@ -23,64 +23,71 @@
       </a>
 
       <nav class="d-flex flex-wrap gap-2" aria-label="Glavna navigacija">
-        <a class="btn btn-outline-light btn-sm" href="index.html">Početna</a>
-        <a class="btn btn-outline-light btn-sm" href="o-nama.html">O nama</a>
-        <a class="btn btn-outline-light btn-sm" href="usluge.html">Usluge</a>
-        <a class="btn btn-warning btn-sm" href="cenovnik.html" aria-current="page">Cenovnik</a>
-        <a class="btn btn-outline-light btn-sm" href="kontakt.html">Kontakt</a>
+        <a class="btn btn-outline-light btn-sm" href="index.html" data-cenovnik-prevod="pocetna">Početna</a>
+        <a class="btn btn-outline-light btn-sm" href="o-nama.html" data-cenovnik-prevod="onama">O nama</a>
+        <a class="btn btn-outline-light btn-sm" href="usluge.html" data-cenovnik-prevod="usluge">Usluge</a>
+        <a class="btn btn-warning btn-sm" href="cenovnik.html" aria-current="page" data-cenovnik-prevod="cenovnik">Cenovnik</a>
+        <a class="btn btn-outline-light btn-sm" href="kontakt.html" data-cenovnik-prevod="kontakt">Kontakt</a>
       </nav>
+
+      <div class="d-flex flex-wrap gap-2" aria-label="Podešavanja prikaza">
+        <button class="btn btn-outline-light btn-sm" type="button" data-akcija="tema-cenovnik" aria-label="Promeni temu">◐</button>
+        <button class="btn btn-outline-light btn-sm" type="button" data-akcija="font-smanji-cenovnik" aria-label="Smanji veličinu fonta">A−</button>
+        <button class="btn btn-outline-light btn-sm" type="button" data-akcija="font-povecaj-cenovnik" aria-label="Povećaj veličinu fonta">A+</button>
+        <button class="btn btn-outline-light btn-sm" type="button" data-akcija="jezik-cenovnik" aria-label="Promeni jezik">EN</button>
+      </div>
     </div>
   </header>
 
-  <main class="flex-grow-1">
+  <main class="flex-grow-1" data-font-oblast>
     <section class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bold mb-3">Okvirni cenovnik</h1>
-          <p class="lead text-secondary mb-0">Jednostavan pregled osnovnih cena naših usluga.</p>
+          <h1 class="display-5 fw-bold mb-3" data-cenovnik-prevod="naslov">Okvirni cenovnik</h1>
+          <p class="lead text-secondary mb-0" data-tema-prigusen data-cenovnik-prevod="uvod">Jednostavan pregled osnovnih cena naših usluga.</p>
         </div>
 
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4">
-            <article class="card h-100 border-0 shadow-sm rounded-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 bg-white text-dark" data-tema-kartica>
               <div class="card-body p-4">
-                <h2 class="h4 fw-bold">Dubinsko pranje automobila</h2>
-                <p class="text-secondary">Sedišta, podne obloge, patosnice i dostupne tekstilne površine.</p>
+                <h2 class="h4 fw-bold" data-cenovnik-prevod="auto_naslov">Dubinsko pranje automobila</h2>
+                <p class="text-secondary" data-tema-prigusen data-cenovnik-prevod="auto_tekst">Sedišta, podne obloge, patosnice i dostupne tekstilne površine.</p>
                 <p class="fs-3 fw-bold mb-0">od 3.500 RSD</p>
               </div>
             </article>
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <article class="card h-100 border-0 shadow-sm rounded-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 bg-white text-dark" data-tema-kartica>
               <div class="card-body p-4">
-                <h2 class="h4 fw-bold">Dubinsko pranje nameštaja</h2>
-                <p class="text-secondary">Sofe, fotelje, stolice, dušeci i druge tapacirane površine.</p>
+                <h2 class="h4 fw-bold" data-cenovnik-prevod="namestaj_naslov">Dubinsko pranje nameštaja</h2>
+                <p class="text-secondary" data-tema-prigusen data-cenovnik-prevod="namestaj_tekst">Sofe, fotelje, stolice, dušeci i druge tapacirane površine.</p>
                 <p class="fs-3 fw-bold mb-0">od 450 RSD</p>
               </div>
             </article>
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <article class="card h-100 border-0 shadow-sm rounded-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 bg-white text-dark" data-tema-kartica>
               <div class="card-body p-4">
-                <h2 class="h4 fw-bold">Iznajmljivanje mašine</h2>
-                <p class="text-secondary mb-2">Najam na 24 časa: 2.500 RSD</p>
-                <p class="text-secondary mb-2">Vikend paket: 4.500 RSD</p>
-                <p class="text-secondary mb-0">Depozit: 5.000 RSD</p>
+                <h2 class="h4 fw-bold" data-cenovnik-prevod="renta_naslov">Iznajmljivanje mašine</h2>
+                <p class="text-secondary mb-2" data-tema-prigusen data-cenovnik-prevod="renta_24">Najam na 24 časa: 2.500 RSD</p>
+                <p class="text-secondary mb-2" data-tema-prigusen data-cenovnik-prevod="renta_vikend">Vikend paket: 4.500 RSD</p>
+                <p class="text-secondary mb-0" data-tema-prigusen data-cenovnik-prevod="renta_depozit">Depozit: 5.000 RSD</p>
               </div>
             </article>
           </div>
         </div>
 
-        <div class="alert alert-warning mt-5 mb-4" role="note">
+        <div class="alert alert-warning mt-5 mb-4" role="note" data-cenovnik-prevod="napomena">
           Cene su okvirne i mogu zavisiti od veličine, materijala i stanja površine.
         </div>
 
         <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a class="btn btn-dark" href="usluge.html">Nazad na usluge</a>
-          <a class="btn btn-warning" href="kontakt.html">Zatraži termin</a>
-          <a class="btn btn-outline-dark" href="dokumenti/cenovnik.pdf" target="_blank" rel="noopener">Otvori PDF cenovnik</a>
+          <a class="btn btn-outline-dark" href="usluge.html" data-tema-okvir-dugme data-cenovnik-prevod="nazad">Nazad na usluge</a>
+          <a class="btn btn-warning" href="kontakt.html" data-cenovnik-prevod="termin">Zatraži termin</a>
+          <a class="btn btn-outline-dark" href="dokumenti/cenovnik.pdf" target="_blank" rel="noopener" data-tema-okvir-dugme data-cenovnik-prevod="pdf">Otvori PDF cenovnik</a>
         </div>
       </div>
     </section>
@@ -88,9 +95,10 @@
 
   <footer class="bg-dark text-light mt-auto">
     <div class="container py-4 text-center">
-      <p class="mb-0">© 2026 Dubinski Sjaj. Sva prava zadržana.</p>
+      <p class="mb-0" data-cenovnik-prevod="prava">© 2026 Dubinski Sjaj. Sva prava zadržana.</p>
     </div>
   </footer>
 
+  <script src="js/cenovnik.js"></script>
 </body>
 </html>
