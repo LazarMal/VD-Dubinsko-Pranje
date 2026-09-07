@@ -40,6 +40,32 @@ function povecajFont() {
   postaviVelicinuFonta(novaVelicina);
 }
 
+function postaviNazivCenovnika() {
+  const naziv = document.documentElement.lang === "en" ? "Price list" : "Cenovnik";
+  document.querySelectorAll("[data-link-cenovnik]").forEach((link) => {
+    link.textContent = naziv;
+  });
+}
+
+function pripremiCenovnikUMeniju() {
+  document.querySelectorAll(".mega-kolona:last-child").forEach((kolona) => {
+    if (kolona.querySelector("[data-link-cenovnik]")) return;
+
+    const link = document.createElement("a");
+    link.href = "cenovnik.html";
+    link.setAttribute("data-link-cenovnik", "");
+    kolona.appendChild(link);
+  });
+
+  postaviNazivCenovnika();
+
+  const posmatracJezika = new MutationObserver(postaviNazivCenovnika);
+  posmatracJezika.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"]
+  });
+}
+
 function pripremiNavigaciju() {
   const hamburger = document.querySelector("[data-akcija='meni']");
   const navigacija = document.querySelector(".glavna-navigacija");
@@ -79,6 +105,7 @@ function ucitajPodesavanja() {
 
 document.addEventListener("DOMContentLoaded", () => {
   ucitajPodesavanja();
+  pripremiCenovnikUMeniju();
   pripremiNavigaciju();
   pripremiKontrolePrikaza();
 });
