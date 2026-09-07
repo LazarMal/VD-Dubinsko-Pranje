@@ -1,0 +1,51 @@
+/* Male korekcije pristupačnosti potvrđene Lighthouse proverom. */
+
+/* Veći kontrast oznaka na svetloj pozadini. */
+.oznaka {
+  color: #76562e;
+}
+
+/* Veća klikabilna zona tačkica slajdera, bez vizuelnog uvećavanja samih tačkica. */
+.tackice {
+  gap: 4px;
+}
+
+.tacka {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+}
+
+.tacka::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.tacka.aktivna {
+  background: transparent;
+  transform: none;
+}
+
+.tacka.aktivna::before {
+  background: #ffffff;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Obezbeđuje dovoljno mesta za tri veće klikabilne zone između strelica. */
+.slajder-kontrole {
+  width: 210px;
+}
+
+@media (max-width: 620px) {
+  .slajder-kontrole {
+    width: auto;
+  }
+}
