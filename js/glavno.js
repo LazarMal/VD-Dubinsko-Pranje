@@ -12,6 +12,15 @@ function ucitajKorekcijeTamneTeme() {
   document.head.appendChild(stilTamneTeme);
 }
 
+function ucitajKorekcijePristupacnosti() {
+  if (document.querySelector("link[href='css/pristupacnost.css']")) return;
+
+  const stilPristupacnosti = document.createElement("link");
+  stilPristupacnosti.rel = "stylesheet";
+  stilPristupacnosti.href = "css/pristupacnost.css";
+  document.head.appendChild(stilPristupacnosti);
+}
+
 function postaviTemu(tema) {
   const tamnaTema = tema === "tamna";
   document.body.classList.toggle("tema-tamna", tamnaTema);
@@ -114,6 +123,7 @@ function ucitajPodesavanja() {
 
 document.addEventListener("DOMContentLoaded", () => {
   ucitajKorekcijeTamneTeme();
+  ucitajKorekcijePristupacnosti();
   ucitajPodesavanja();
   pripremiCenovnikUMeniju();
   pripremiNavigaciju();
