@@ -18,38 +18,29 @@ jobs:
           npm init -y
           npm install playwright
           npx playwright install --with-deps chromium
-      - name: Snimanje hostovanog sajta
+      - name: Snimanje O nama sa ucitanim YouTube sadrzajem
         run: |
           mkdir -p dokumentacija-snimci
           cat > snimci.js <<'JS'
           const { chromium } = require('playwright');
-          const fs = require('fs');
           const base = 'https://lazarmal.github.io/VD-Dubinsko-Pranje/';
           (async () => {
             const browser = await chromium.launch({headless:true});
             const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
             const page = await context.newPage();
-            async function snimi(path, file, extra) {
-              await page.goto(base + path, { waitUntil: 'domcontentloaded', timeout: 60000 });
-              await page.waitForTimeout(9000);
-              if (extra) await extra(page);
-              await page.screenshot({ path: 'dokumentacija-snimci/' + file, fullPage: true });
-            }
-            await snimi('', '01-pocetna-live.png');
-            await snimi('o-nama.html', '02-o-nama-live.png');
-            await snimi('usluge.html', '03-usluge-live.png');
-            await snimi('cenovnik.html', '04-cenovnik-live.png');
-            await snimi('kontakt.html', '05-kontakt-live.png');
-            await snimi('kontakt.html', '06-kontakt-validacija-live.png', async p => {
-              await p.locator('#kontakt-forma button[type="submit"]').click();
-              await p.waitForTimeout(1000);
-            });
+            await page.goto(base + 'o-nama.html', { waitUntil: 'domcontentloaded', timeout: 60000 });
+            const iframe = page.locator('iframe[title="Primer dubinskog pranja nameštaja"]');
+            await iframe.scrollIntoViewIfNeeded();
+            await page.waitForTimeout(12000);
+            await page.evaluate(() => window.scrollTo(0, 0));
+            await page.waitForTimeout(1500);
+            await page.screenshot({ path: 'dokumentacija-snimci/02-o-nama-live-video.png', fullPage: true });
             await browser.close();
           })();
           JS
           node snimci.js
       - uses: actions/upload-artifact@v4
         with:
-          name: dokumentacija-snimci-live
+          name: dokumentacija-snimci-video
           path: dokumentacija-snimci/
           retention-days: 7
