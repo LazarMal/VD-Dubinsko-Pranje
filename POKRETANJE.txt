@@ -1,0 +1,16 @@
+POKRETANJE SAJTA
+
+1. Otvoriti ceo folder projekta u Visual Studio Code-u.
+2. Najsigurnije je pokrenuti index.html preko lokalnog servera (npr. Live Server ekstenzija).
+3. Sajt može da se pregleda i direktnim otvaranjem index.html. Dvojezička podrška tada koristi rezervne lokalne podatke ako browser blokira učitavanje JSON datoteke preko fetch funkcije.
+4. Glavne stranice:
+   - index.html
+   - o-nama.html
+   - usluge.html
+   - kontakt.html
+5. Dodatni React deo:
+   - dodatni-react/pocetna.html
+   - dodatni-react/usluge.html
+
+Napomena: YouTube i Google Maps su jedina dva elementa koja zahtevaju internet vezu,
+jer su u planu rada izričito navedeni kao embedded multimedijalni elementi.

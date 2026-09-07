@@ -1,0 +1,22 @@
+$boja-akcenta: #c5a46a;
+$boja-tamna: #171c1f;
+$poluprecnik: 22px;
+
+.istakni-ponudu {
+  border-radius: $poluprecnik;
+  border: 1px solid rgba($boja-akcenta, 0.55);
+  overflow: hidden;
+
+  .istakni-oznaka {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: $boja-akcenta;
+    color: $boja-tamna;
+    font-weight: 700;
+  }
+
+  &:hover {
+    border-color: $boja-akcenta;
+  }
+}

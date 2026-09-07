@@ -1,0 +1,17 @@
+/* Ovaj fajl je CSS izlaz jednostavnog SCSS primera iz dodatno.scss. */
+.istakni-ponudu {
+  border-radius: 22px;
+  border: 1px solid rgba(197, 164, 106, 0.55);
+  overflow: hidden;
+}
+.istakni-ponudu .istakni-oznaka {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #c5a46a;
+  color: #171c1f;
+  font-weight: 700;
+}
+.istakni-ponudu:hover {
+  border-color: #c5a46a;
+}

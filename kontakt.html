@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt forma firme Dubinski Sjaj za zakazivanje dubinskog pranja automobila, nameštaja ili iznajmljivanje mašine.">
+  <meta name="keywords" content="kontakt, dubinsko pranje, zakazivanje, Novi Sad, iznajmljivanje mašine">
+  <meta name="author" content="Dubinski Sjaj">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f2730">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dubinski Sjaj | Kontakt">
+  <meta property="og:description" content="Kontaktirajte Dubinski Sjaj i pošaljite upit za uslugu.">
+  <link rel="icon" type="image/png" href="slike/logo-dubinski-sjaj.png">
+  <title>Dubinski Sjaj | Kontakt</title>
+  <!-- Ova stranica je namerno realizovana isključivo Bootstrap klasama. -->
+  <link rel="stylesheet" href="biblioteke/bootstrap/bootstrap.min.css">
+</head>
+<body class="bg-dark text-light min-vh-100">
+  <nav id="glavna-navigacija-bootstrap" class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top" aria-label="Glavna navigacija">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2 text-light" href="index.html">
+        <img src="slike/logo-dubinski-sjaj.png" class="d-inline-block" alt="Logo firme Dubinski Sjaj" width="42" height="42">
+        <span>Dubinski Sjaj</span>
+      </a>
+      <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#bootstrap-meni" aria-controls="bootstrap-meni" aria-expanded="false" aria-label="Otvori meni">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="bootstrap-meni">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link px-3" href="index.html" data-prevod="meni_pocetna">Početna</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="o-nama.html" data-prevod="meni_o_nama">O nama</a></li>
+          <li class="nav-item dropdown d-lg-flex align-items-lg-center">
+            <a class="nav-link ps-3 pe-lg-1" href="usluge.html" data-prevod="meni_usluge">Usluge</a>
+            <button class="btn btn-link nav-link dropdown-toggle dropdown-toggle-split ps-lg-1 pe-3 border-0 text-decoration-none" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Otvori podmeni usluga"></button>
+            <ul class="dropdown-menu dropdown-menu-dark shadow">
+              <li><a class="dropdown-item" href="usluge.html#automobili" data-prevod="meni_auto">Dubinsko pranje automobila</a></li>
+              <li><a class="dropdown-item" href="usluge.html#namestaj" data-prevod="meni_namestaj">Dubinsko pranje nameštaja</a></li>
+              <li><a class="dropdown-item" href="usluge.html#iznajmljivanje" data-prevod="meni_renta">Iznajmljivanje mašina</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3 active fw-bold text-warning" aria-current="page" href="kontakt.html" data-prevod="meni_kontakt">Kontakt</a></li>
+        </ul>
+        <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-outline-light" type="button" data-akcija="tema" title="Promeni temu" aria-label="Promeni temu">◐</button>
+          <button class="btn btn-outline-light" type="button" data-akcija="font-smanji" title="Smanji veličinu fonta" aria-label="Smanji veličinu fonta">A−</button>
+          <button class="btn btn-outline-light" type="button" data-akcija="font-povecaj" title="Povećaj veličinu fonta" aria-label="Povećaj veličinu fonta">A+</button>
+          <button class="btn btn-outline-light" type="button" data-akcija="jezik" aria-label="Prikaži sajt na engleskom">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="py-5 bg-dark">
+      <div class="container py-lg-5">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 text-light">
+            <h1 class="display-4 fw-bold mb-3" data-prevod="kontakt_naslov">Kontaktirajte nas</h1>
+            <p class="lead mb-4" data-prevod="kontakt_uvod">Pošaljite osnovne podatke i opišite šta želite da se očisti. Forma proverava podatke pre potvrde.</p>
+
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
+              <img src="slike/pranje-namestaja.jpg" class="img-fluid" alt="Profesionalno dubinsko pranje nameštaja">
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 mb-4 bg-white text-dark" data-tema-povrsina>
+              <div class="card-body p-4">
+                <h2 class="h4 fw-bold mb-3" data-prevod="kontakt_podaci_naslov">Kontakt podaci</h2>
+                <p class="mb-2"><strong data-prevod="oznaka_telefon">Telefon:</strong> <span>+381 60 123 45 67</span></p>
+                <p class="mb-2"><strong data-prevod="oznaka_eposta">Email:</strong> <span>kontakt@dubinskisjaj.rs</span></p>
+                <p class="mb-2"><strong data-prevod="oznaka_adresa">Adresa:</strong> <span data-prevod="kontakt_adresa">Novi Sad, Srbija</span></p>
+                <p class="mb-0"><strong data-prevod="oznaka_radno_vreme">Radno vreme:</strong> <span data-prevod="kontakt_radno_vreme">Pon–Sub: 08:00–19:00</span></p>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white text-dark" data-tema-povrsina>
+              <div class="card-body p-3">
+                <h2 class="h5 fw-bold mb-3" data-prevod="kontakt_mapa_naslov">Lokacija</h2>
+                <!-- Eksterni URL se koristi samo zato što je Google Maps embedded izričito obavezan element. -->
+                <div class="ratio ratio-4x3">
+                  <iframe src="https://maps.google.com/maps?q=Novi%20Sad%2C%20Srbija&z=13&output=embed" title="Mapa lokacije Novi Sad" loading="lazy" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-lg rounded-4 bg-white text-dark" data-tema-povrsina>
+              <div class="card-body p-4 p-md-5">
+                <h2 class="h3 fw-bold mb-4" data-prevod="kontakt_posalji_upit">Pošaljite upit</h2>
+                <form id="kontakt-forma" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-semibold" for="ime" data-prevod="kontakt_ime">Ime i prezime</label>
+                      <input class="form-control" type="text" id="ime" name="ime" required minlength="2" maxlength="40" pattern="[A-Za-zČĆŽŠĐčćžšđ\s-]{2,40}" autocomplete="name">
+                      <div class="invalid-feedback">Unesite ime od najmanje dva slova.</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-semibold" for="telefon" data-prevod="kontakt_telefon">Telefon</label>
+                      <input class="form-control" type="tel" id="telefon" name="telefon" required pattern="[0-9+()\s-]{6,20}" autocomplete="tel">
+                      <div class="invalid-feedback">Unesite ispravan broj telefona.</div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="elektronska-posta" data-prevod="kontakt_eposta">E-pošta</label>
+                    <input class="form-control" type="email" id="elektronska-posta" name="elektronska-posta" required autocomplete="email">
+                    <div class="invalid-feedback">Unesite ispravnu email adresu.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="usluga" data-prevod="kontakt_usluga">Usluga</label>
+                    <select class="form-select" id="usluga" name="usluga" required>
+                      <option value="" selected disabled data-prevod="kontakt_izaberi">Izaberite uslugu</option>
+                      <option value="automobil" data-prevod="kontakt_auto">Dubinsko pranje automobila</option>
+                      <option value="namestaj" data-prevod="kontakt_namestaj">Dubinsko pranje nameštaja</option>
+                      <option value="iznajmljivanje" data-prevod="kontakt_renta">Iznajmljivanje mašine</option>
+                    </select>
+                    <div class="invalid-feedback">Izaberite jednu uslugu.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="poruka" data-prevod="kontakt_poruka">Poruka</label>
+                    <textarea class="form-control" id="poruka" name="poruka" rows="6" required minlength="10" maxlength="600"></textarea>
+                    <div class="invalid-feedback">Poruka treba da ima najmanje 10 karaktera.</div>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="da" id="saglasnost" required>
+                    <label class="form-check-label" for="saglasnost" data-prevod="kontakt_saglasnost">Saglasan/na sam da se podaci koriste samo za odgovor na ovaj upit.</label>
+                    <div class="invalid-feedback">Potvrdite saglasnost.</div>
+                  </div>
+
+                  <button class="btn btn-warning btn-lg w-100 fw-bold" type="submit" data-prevod="kontakt_posalji">Proveri i pošalji</button>
+                  <div id="status-forme" role="status" aria-live="polite"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4 mt-5 bg-dark text-light">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div><strong>Dubinski Sjaj</strong><div data-prevod="podnozje_opis">Dubinsko pranje automobila i nameštaja i iznajmljivanje mašina za dubinsko pranje.</div></div>
+      <div data-prevod="autorska_prava">© 2026 Dubinski Sjaj. Sva prava zadržana.</div>
+    </div>
+  </footer>
+
+  <script src="biblioteke/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/prevod.js"></script>
+  <script src="js/kontakt-prikaz.js"></script>
+  <script src="js/forma.js"></script>
+</body>
+</html>

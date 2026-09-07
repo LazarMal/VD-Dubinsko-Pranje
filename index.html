@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dubinski Sjaj - dubinsko pranje automobila i nameštaja i iznajmljivanje mašina za dubinsko pranje u Novom Sadu.">
+  <meta name="keywords" content="dubinsko pranje, pranje automobila, pranje nameštaja, iznajmljivanje mašina, Novi Sad">
+  <meta name="author" content="Dubinski Sjaj">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f2730">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dubinski Sjaj | Početna">
+  <meta property="og:description" content="Dubinsko pranje automobila i nameštaja i iznajmljivanje mašina za dubinsko pranje.">
+  <link rel="icon" type="image/png" href="slike/logo-dubinski-sjaj.png">
+  <title>Dubinski Sjaj | Početna</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <a class="preskoci-sadrzaj" href="#glavni-sadrzaj" data-prevod="preskoci">Preskoči na sadržaj</a>
+
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje-red">
+      <a class="brend" href="index.html" aria-label="Dubinski Sjaj - početna">
+        <img class="brend-logo" src="slike/logo-dubinski-sjaj.png" alt="Logo firme Dubinski Sjaj" width="42" height="42">
+        <span>Dubinski Sjaj</span>
+      </a>
+
+      <button class="hamburger" type="button" data-akcija="meni" aria-expanded="false" aria-controls="glavna-navigacija" aria-label="Otvori meni">☰</button>
+
+      <nav class="glavna-navigacija" id="glavna-navigacija" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html" aria-current="page" data-prevod="meni_pocetna">Početna</a></li>
+          <li><a href="o-nama.html" data-prevod="meni_o_nama">O nama</a></li>
+          <li class="stavka-padajuca">
+            <div class="meni-usluge-red">
+              <a href="usluge.html" data-prevod="meni_usluge">Usluge</a>
+              <button class="meni-strelica" type="button" data-akcija="mega-meni" aria-expanded="false" aria-label="Otvori podmeni usluga">⌄</button>
+            </div>
+            <div class="mega-meni" aria-label="Mega meni usluga">
+              <div class="mega-kolona"><strong data-prevod="kartica_auto_naslov">Automobili</strong><a href="usluge.html#automobili" data-prevod="meni_auto">Dubinsko pranje automobila</a></div>
+              <div class="mega-kolona"><strong data-prevod="kartica_namestaj_naslov">Nameštaj</strong><a href="usluge.html#namestaj" data-prevod="meni_namestaj">Dubinsko pranje nameštaja</a></div>
+              <div class="mega-kolona"><strong data-prevod="kartica_renta_naslov">Iznajmljivanje</strong><a href="usluge.html#iznajmljivanje" data-prevod="meni_renta">Iznajmljivanje mašina</a></div>
+            </div>
+          </li>
+          <li><a href="kontakt.html" data-prevod="meni_kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="kontrole-prikaza" aria-label="Podešavanja prikaza">
+        <button class="kontrola-dugme" type="button" data-akcija="tema" aria-pressed="false" title="Promeni temu">◐</button>
+        <button class="kontrola-dugme" type="button" data-akcija="font-smanji" title="Smanji veličinu fonta" aria-label="Smanji veličinu fonta">A−</button>
+        <button class="kontrola-dugme" type="button" data-akcija="font-povecaj" title="Povećaj veličinu fonta" aria-label="Povećaj veličinu fonta">A+</button>
+        <button class="kontrola-dugme" type="button" data-akcija="jezik" aria-label="Prikaži sajt na engleskom">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="glavni-sadrzaj">
+    <section class="uvodna-sekcija uvodna-luksuzna">
+      <div class="kontejner uvodna-mreza">
+        <div class="uvodni-sadrzaj">
+          <h1 class="sjaj-tekst" data-prevod="pocetna_naslov">Dubinsko pranje bez komplikovanja.</h1>
+          <p data-prevod="pocetna_uvod">Profesionalno dubinsko pranje automobila i nameštaja, uz mogućnost iznajmljivanja mašina kada želite da posao uradite sami.</p>
+          <div class="grupa-dugmadi">
+            <a class="dugme-primarno" href="usluge.html" data-prevod="pocetna_dugme_usluge">Pogledaj usluge</a>
+            <a class="dugme-sekundarno" href="kontakt.html" data-prevod="pocetna_dugme_kontakt">Zatraži termin</a>
+          </div>
+          <div class="uvodno-istaknuto" aria-label="Istaknute kategorije usluga">
+            <span class="uvodna-stavka" data-prevod="kartica_auto_naslov">Automobili</span>
+            <span class="uvodna-stavka" data-prevod="kartica_namestaj_naslov">Nameštaj</span>
+            <span class="uvodna-stavka" data-prevod="kartica_renta_naslov">Iznajmljivanje</span>
+          </div>
+        </div>
+
+        <div class="slajder slajder-istaknut" data-slajder aria-label="Slajder usluga">
+          <figure class="slajd aktivan">
+            <img src="slike/pranje-automobila.jpg" alt="Prikaz dubinskog pranja automobila">
+            <figcaption class="slajd-opis">
+              <span class="slajd-redni-broj">01</span>
+              <strong data-prevod="kartica_auto_naslov">Automobili</strong>
+            </figcaption>
+          </figure>
+          <figure class="slajd">
+            <img src="slike/pranje-namestaja.jpg" alt="Prikaz dubinskog pranja nameštaja">
+            <figcaption class="slajd-opis">
+              <span class="slajd-redni-broj">02</span>
+              <strong data-prevod="kartica_namestaj_naslov">Nameštaj</strong>
+            </figcaption>
+          </figure>
+          <figure class="slajd">
+            <img src="slike/iznajmljivanje-masine.jpg" alt="Prikaz mašine za dubinsko pranje">
+            <figcaption class="slajd-opis">
+              <span class="slajd-redni-broj">03</span>
+              <strong data-prevod="kartica_renta_naslov">Iznajmljivanje</strong>
+            </figcaption>
+          </figure>
+          <div class="slajder-kontrole">
+            <button class="slajder-dugme" type="button" data-prethodni aria-label="Prethodna slika">←</button>
+            <div class="tackice" aria-label="Izbor slajda">
+              <button class="tacka aktivna" type="button" aria-label="Prvi slajd"></button>
+              <button class="tacka" type="button" aria-label="Drugi slajd"></button>
+              <button class="tacka" type="button" aria-label="Treći slajd"></button>
+            </div>
+            <button class="slajder-dugme" type="button" data-sledeci aria-label="Sledeća slika">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcija povrsina">
+      <div class="kontejner">
+        <div class="uvod-sekcije">
+          <span class="oznaka" data-prevod="meni_usluge">Usluge</span>
+          <h2 data-prevod="pocetna_usluge_naslov">Tri načina da dođete do čistog prostora</h2>
+          <p data-prevod="pocetna_usluge_tekst">Od kompletnog enterijera automobila do garniture u dnevnoj sobi ili mašine za samostalno pranje.</p>
+        </div>
+
+        <div class="mreza-tri">
+          <article class="kartica kartica-usluge">
+            <img class="kartica-slika slika-prelaz" src="slike/pranje-automobila.jpg" alt="Prikaz usluge dubinskog pranja automobila">
+            <div class="kartica-sadrzaj">
+              <span class="kartica-broj">01</span>
+              <h3 data-prevod="kartica_auto_naslov">Automobili</h3>
+              <p data-prevod="kartica_auto_tekst">Dubinsko pranje sedišta, poda, gepeka i ostalih tekstilnih površina u enterijeru vozila.</p>
+              <a class="link-strelica" href="usluge.html#automobili" data-prevod="saznaj_vise">Saznaj više →</a>
+            </div>
+          </article>
+
+          <article class="kartica kartica-usluge">
+            <img class="kartica-slika slika-prelaz" src="slike/pranje-namestaja.jpg" alt="Prikaz usluge dubinskog pranja nameštaja">
+            <div class="kartica-sadrzaj">
+              <span class="kartica-broj">02</span>
+              <h3 data-prevod="kartica_namestaj_naslov">Nameštaj</h3>
+              <p data-prevod="kartica_namestaj_tekst">Temeljno pranje sofa, fotelja, stolica, dušeka i drugih tapaciranih površina.</p>
+              <a class="link-strelica" href="usluge.html#namestaj" data-prevod="saznaj_vise">Saznaj više →</a>
+            </div>
+          </article>
+
+          <article class="kartica kartica-usluge">
+            <img class="kartica-slika slika-prelaz" src="slike/iznajmljivanje-masine.jpg" alt="Prikaz iznajmljivanja mašine za dubinsko pranje">
+            <div class="kartica-sadrzaj">
+              <span class="kartica-broj">03</span>
+              <h3 data-prevod="kartica_renta_naslov">Iznajmljivanje</h3>
+              <p data-prevod="kartica_renta_tekst">Preuzmite mašinu za dubinsko pranje na 24 časa ili za vikend, uz kratko uputstvo za korišćenje.</p>
+              <a class="link-strelica" href="usluge.html#iznajmljivanje" data-prevod="saznaj_vise">Saznaj više →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcija">
+      <div class="kontejner">
+        <div class="brojke" aria-label="Kratke informacije o ponudi">
+          <div class="brojka"><strong>3</strong><span data-prevod="pocetna_brojka_1">vrste usluge</span></div>
+          <div class="brojka"><strong>24h</strong><span data-prevod="pocetna_brojka_2">najam mašine</span></div>
+          <div class="brojka"><strong>6</strong><span data-prevod="pocetna_brojka_3">dana nedeljno</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcija povrsina">
+      <div class="kontejner">
+        <div class="uvod-sekcije">
+          <h2 data-prevod="pocetna_koraci_naslov">Kako izgleda saradnja</h2>
+        </div>
+        <div class="koraci">
+          <article class="korak">
+            <h3 data-prevod="korak_1_naslov">Pošaljete upit</h3>
+            <p data-prevod="korak_1_tekst">Navedite šta želite da se očisti i približnu veličinu ili tip površine.</p>
+          </article>
+          <article class="korak">
+            <h3 data-prevod="korak_2_naslov">Dogovorimo termin</h3>
+            <p data-prevod="korak_2_tekst">Potvrđujemo termin, okvirnu cenu i način dolaska ili preuzimanja mašine.</p>
+          </article>
+          <article class="korak">
+            <h3 data-prevod="korak_3_naslov">Pranje ili preuzimanje</h3>
+            <p data-prevod="korak_3_tekst">Obavljamo uslugu ili vam predajemo mašinu sa jasnim uputstvom za upotrebu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcija-kompaktna">
+      <div class="kontejner traka-poziv">
+        <div>
+          <h2 data-prevod="poziv_naslov">Treba vam procena cene?</h2>
+          <p data-prevod="poziv_tekst">Pošaljite kratak opis i odgovorićemo sa predlogom usluge.</p>
+        </div>
+        <a class="dugme-primarno" href="kontakt.html" data-prevod="poziv_dugme">Kontaktirajte nas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="podnozje">
+    <div class="kontejner">
+      <div class="podnozje-mreza">
+        <div>
+          <h3>Dubinski Sjaj</h3>
+          <p data-prevod="podnozje_opis">Dubinsko pranje automobila i nameštaja i iznajmljivanje mašina za dubinsko pranje.</p>
+        </div>
+        <div>
+          <h3 data-prevod="podnozje_navigacija">Navigacija</h3>
+          <ul>
+            <li><a href="index.html" data-prevod="meni_pocetna">Početna</a></li>
+            <li><a href="o-nama.html" data-prevod="meni_o_nama">O nama</a></li>
+            <li><a href="usluge.html" data-prevod="meni_usluge">Usluge</a></li>
+            <li><a href="kontakt.html" data-prevod="meni_kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-prevod="podnozje_kontakt">Kontakt</h3>
+          <p><span>Novi Sad</span>, Srbija<br><span>+381 60 123 45 67</span><br><span>kontakt@dubinskisjaj.rs</span></p>
+        </div>
+      </div>
+      <p class="autorska-napomena" data-prevod="autorska_prava">© 2026 Dubinski Sjaj. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script src="js/glavno.js"></script>
+  <script src="js/slajder.js"></script>
+  <script src="js/prevod.js"></script>
+</body>
+</html>

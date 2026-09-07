@@ -1,0 +1,26 @@
+@font-face { font-family: "InterLokalni"; src: url("../../fontovi/inter-redovni.otf") format("opentype"); font-weight: 400; }
+@font-face { font-family: "InterLokalni"; src: url("../../fontovi/inter-podebljani.otf") format("opentype"); font-weight: 700; }
+:root { --tamna:#171c1f; --akcenat:#c5a46a; --svetla:#f3efe8; --bela:#fffdf9; --tekst:#1b2023; --linija:#ddd6cc; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:"InterLokalni",Arial,sans-serif; background:var(--svetla); color:var(--tekst); }
+a { color:inherit; }
+.dodatno-zaglavlje { background:var(--tamna); color:white; }
+.dodatni-kontejner { width:min(1120px,calc(100% - 36px)); margin:0 auto; }
+.dodatna-navigacija { min-height:72px; display:flex; align-items:center; gap:24px; }
+.dodatni-brend { font-weight:700; text-decoration:none; margin-right:auto; }
+.dodatna-navigacija a:not(.dodatni-brend) { color:#ded8ce; text-decoration:none; }
+.dodatna-navigacija a:hover { color:#e5c78f; }
+.dodatna-uvodna { padding:82px 0 64px; }
+.dodatna-mreza { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
+.dodatna-uvodna h1 { font-size:clamp(2.7rem,7vw,5.3rem); line-height:1.03; letter-spacing:-.055em; margin:0 0 20px; }
+.dodatna-uvodna p { font-size:1.1rem; line-height:1.7; color:#6e6b65; }
+.dodatna-slika { width:100%; border-radius:28px; box-shadow:0 18px 50px rgba(28,25,20,.14); }
+.dodatno-dugme { display:inline-block; margin-top:18px; padding:13px 20px; border-radius:12px; background:var(--akcenat); color:#17130d; text-decoration:none; font-weight:700; }
+.dodatna-sekcija { padding:64px 0; background:var(--bela); }
+.dodatne-kartice { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.dodatna-kartica { padding:24px; border:1px solid var(--linija); border-radius:20px; background:white; }
+.dodatna-kartica h2 { margin-top:0; }
+.dodatna-kartica p { color:#6e6b65; }
+.dodatna-cena { color:#8d6d3d; font-size:1.55rem; font-weight:700; }
+.dodatno-podnozje { background:var(--tamna); color:#ded8ce; padding:32px 0; }
+@media (max-width:760px) { .dodatna-mreza,.dodatne-kartice { grid-template-columns:1fr; } .dodatna-navigacija { flex-wrap:wrap; padding:14px 0; } .dodatni-brend { width:100%; } }
