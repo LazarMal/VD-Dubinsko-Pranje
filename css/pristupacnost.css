@@ -1,4 +1,4 @@
-/* Male korekcije pristupačnosti potvrđene Lighthouse proverom. */
+/* Male korekcije pristupačnosti i interakcije potvrđene završnom proverom. */
 
 /* Veći kontrast oznaka na svetloj pozadini. */
 .oznaka {
@@ -42,6 +42,25 @@
 /* Obezbeđuje dovoljno mesta za tri veće klikabilne zone između strelica. */
 .slajder-kontrole {
   width: 210px;
+}
+
+/* Mega meni je vezan direktno za stavku Usluge, bez praznine koja prekida hover. */
+.mega-meni {
+  top: 100%;
+}
+
+/* Posle izbora stavke ili zatvaranja strelicom meni ostaje zatvoren dok miš ne napusti stavku. */
+.stavka-padajuca.mega-zatvoren .mega-meni {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+  .stavka-padajuca.mega-zatvoren .mega-meni {
+    display: none;
+  }
 }
 
 @media (max-width: 620px) {
