@@ -89,6 +89,13 @@ function pripremiNavigaciju() {
   const navigacija = document.querySelector(".glavna-navigacija");
   const dugmePodmenija = document.querySelector("[data-akcija='mega-meni']");
   const stavkaPodmenija = dugmePodmenija?.closest(".stavka-padajuca");
+  const megaMeni = stavkaPodmenija?.querySelector(".mega-meni");
+
+  function zatvoriMegaMeni() {
+    stavkaPodmenija?.classList.remove("otvoren");
+    stavkaPodmenija?.classList.add("mega-zatvoren");
+    dugmePodmenija?.setAttribute("aria-expanded", "false");
+  }
 
   hamburger?.addEventListener("click", () => {
     const otvorena = navigacija?.classList.toggle("otvorena") || false;
@@ -97,8 +104,23 @@ function pripremiNavigaciju() {
 
   dugmePodmenija?.addEventListener("click", (dogadjaj) => {
     dogadjaj.preventDefault();
-    const otvoren = stavkaPodmenija?.classList.toggle("otvoren") || false;
-    dugmePodmenija.setAttribute("aria-expanded", String(otvoren));
+
+    const trenutnoOtvoren = stavkaPodmenija?.classList.contains("otvoren");
+    stavkaPodmenija?.classList.remove("mega-zatvoren");
+    stavkaPodmenija?.classList.toggle("otvoren", !trenutnoOtvoren);
+    dugmePodmenija.setAttribute("aria-expanded", String(!trenutnoOtvoren));
+
+    if (trenutnoOtvoren) {
+      stavkaPodmenija?.classList.add("mega-zatvoren");
+    }
+  });
+
+  megaMeni?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", zatvoriMegaMeni);
+  });
+
+  stavkaPodmenija?.addEventListener("mouseleave", () => {
+    stavkaPodmenija.classList.remove("mega-zatvoren");
   });
 }
 
